@@ -38,6 +38,9 @@ public class Exemple extends JFrame {
         General.setLayout(new BorderLayout());
         General.add(Pan0, BorderLayout.CENTER);
         Pan0.setLayout(new FlowLayout());
+        Tableau.setFillsViewportHeight(true);
+        Dimension preferredSize = new Dimension(500, 150);
+        Tableau.setPreferredScrollableViewportSize(preferredSize);
         Pan0.add(new JScrollPane(Tableau));
         General.add(Pan1, BorderLayout.NORTH);
         Pan1.setLayout(new GridLayout(2, 1));
